@@ -56,6 +56,27 @@
 
 <script>
 
+    function convert(t) {
+
+        var temperature;
+
+        try {
+
+            if (t == "celsius") {
+                temperature = document.getElementById("celsius").value * 9 / 5 + 32;
+                document.getElementById("fahrenheit").value = temperature.toFixed(1);
+        }
+
+            else {
+                temperature = document.getElementById("fahrenheit").value - 32 * 5 / 9;
+                document.getElementById("celsius").value = temperature.toFixed(1);
+        }
+
+    }
+
+    catch (e) {}
+
+    }
 
 </script>
 
